@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-import "video.proto";
 import "article.proto";
+import "video.proto";
 
 message Lecture {
     oneof content {
