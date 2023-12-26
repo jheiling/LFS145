@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message LoginResult {
+    oneof result {
+        string error = 1;
+        Token token = 2;
+    }
+}
+
+message Token {
+    
+}
