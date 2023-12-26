@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package mycompany.mooc.content;
+
+message Video {
+    VideoType type = 1;
+    string url = 2;
+}
+
+enum VideoType {
+    UNSPECIFIED = 0;
+    MP4 = 1;
+    MOV = 2;
+}

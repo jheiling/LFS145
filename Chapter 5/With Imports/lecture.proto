@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "video.proto";
+import "article.proto";
+
+message Lecture {
+    oneof content {
+        Video video = 1;
+        Article article = 2;
+    }
+}
