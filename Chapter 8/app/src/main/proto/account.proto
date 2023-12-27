@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "org.lf.pbtutorial";
+option java_multiple_files = true;
+
+message Account {
+    uint64 id = 1;
+    string name = 2;
+    bool is_verified = 3;
+    repeated uint64 follow_ids = 4;
+}
